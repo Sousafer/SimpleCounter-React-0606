@@ -1,10 +1,10 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 // include your styles into the webpack bundle
 import "../styles/index.css";
-
+import "bootstrap";
 //import your own components
 
 function SimpleCounter(props) {
@@ -36,9 +36,8 @@ setInterval(function(){
     const one = Math.floor(counter/1);
     console.log(four, three, two, one);
     counter++;
-//render your react application
-},1000);
 ReactDOM.render(
-<SimpleCounter digitOne{counter.indexOf()} />, 
+<SimpleCounter digitOne={one} digiTwo={two} digitThree={three} digitFour={four}  />, 
 document.querySelector("#app")
 );
+},1000);

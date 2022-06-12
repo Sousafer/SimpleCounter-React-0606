@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap.css";
+
 .bigCounter div{
     display: inline-block;
     font-size: 60px;
